@@ -485,7 +485,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         grid-gap: 2em;
 
         // logo
@@ -557,11 +557,13 @@
             text-align: left;
             color: $gray-400;
             font-weight: 300;
+            margin-top: 0;
         }
 
         // social media links
         .social-links {
             justify-self: flex-end;
+            align-self: flex-start;
             @include flex();
 
             li {
