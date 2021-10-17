@@ -1,0 +1,23 @@
+// flexbox
+@mixin flex($fd: row, $jc:space-between, $ai:center) {
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: nowrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+// grid
+@mixin grid($width: 300px, $jc:space-between, $ai:center) {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+
+$box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.5);
+$border-radius: 10px;
