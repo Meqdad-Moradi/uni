@@ -139,8 +139,8 @@ section {
   position: absolute;
   inset: 0;
   z-index: 1;
-  -webkit-animation: banner 10s ease infinite;
-          animation: banner 10s ease infinite;
+  -webkit-animation: banner 15s ease-in-out infinite;
+          animation: banner 15s ease-in-out infinite;
 }
 
 #showcase::before,
@@ -1000,6 +1000,25 @@ section {
           align-items: flex-start;
 }
 
+#blogs .blog-content .input-container.error input,
+#blogs .blog-content .input-container.error #message {
+  border-color: #ff4e4e;
+}
+
+#blogs .blog-content .input-container.error small {
+  display: block;
+  color: #ff4e4e;
+}
+
+#blogs .blog-content .input-container.success input,
+#blogs .blog-content .input-container.success #message {
+  border-color: #E5E7EB;
+}
+
+#blogs .blog-content .input-container.success small {
+  display: none;
+}
+
 #blogs .blog-content .input-container:not(:last-child) {
   margin-bottom: 1em;
 }
@@ -1039,8 +1058,12 @@ section {
   cursor: pointer;
 }
 
-#blogs .blog-content .comments {
+#blogs .blog-content .comments-title {
   margin-top: 2.5em;
+}
+
+#blogs .blog-content .comments {
+  margin-top: 2em;
 }
 
 #blogs .blog-content .comments .comment {
@@ -1054,7 +1077,7 @@ section {
 }
 
 #blogs .blog-content .comments .comment:not(:last-child) {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 #blogs .blog-content .comments .user {

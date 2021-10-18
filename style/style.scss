@@ -35,7 +35,7 @@
         position: absolute;
         inset: 0;
         z-index: 1;
-        animation: banner 10s ease infinite;
+        animation: banner 15s ease-in-out infinite;
     }
 
     &::before {
@@ -709,6 +709,31 @@
         .input-container {
             @include flex(column, flex-start, flex-start);
 
+            &.error {
+
+                input,
+                #message {
+                    border-color: $red;
+                }
+
+                small {
+                    display: block;
+                    color: $red;
+                }
+            }
+
+            &.success {
+
+                input,
+                #message {
+                    border-color: $gray-200;
+                }
+
+                small {
+                    display: none;
+                }
+            }
+
             &:not(:last-child) {
                 margin-bottom: 1em;
             }
@@ -749,9 +774,12 @@
 
 
         // comments section
-        .comments {
+        .comments-title {
             margin-top: 2.5em;
+        }
 
+        .comments {
+            margin-top: 2em;
 
             .comment {
                 padding: 2em;
@@ -761,7 +789,7 @@
                 grid-template-columns: 4em 1fr;
 
                 &:not(:last-child) {
-                    margin-bottom: 1em;
+                    margin-bottom: 1.5em;
                 }
             }
 
