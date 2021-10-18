@@ -13,6 +13,10 @@
     text-transform: uppercase;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     line-height: 1.8;
@@ -59,7 +63,7 @@ p:not(:first-child) {
     // font-size: 1.75rem;
     font-size: 1.5rem;
     text-transform: capitalize;
-    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 .subtitle {
@@ -77,11 +81,13 @@ p:not(:first-child) {
 .details {
     color: $gray-400;
     font-size: 0.875rem;
+    font-weight: 300;
 }
 
 .small {
     color: $gray-400;
     font-size: .75rem;
+    font-weight: 300;
 }
 
 .btn {
@@ -103,5 +109,5 @@ p:not(:first-child) {
 }
 
 section {
-    padding-block: 4em;  
+    padding-block: 4em;
 }

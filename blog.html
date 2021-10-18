@@ -20,7 +20,7 @@
     <title>College Website</title>
 </head>
 
-<body>
+<body id="blog-page">
 
     <div id="page-showcase">
         <div class="container">
@@ -39,12 +39,12 @@
                             <li><a href="./index.html">home</a></li>
                             <li><a href="about.html">about</a></li>
                             <li><a href="course.html">course</a></li>
-                            <li><a href="blog.html"  class="active">blog</a></li>
+                            <li><a href="blog.html" class="active">blog</a></li>
                             <li><a href="contact.html">contact</a></li>
                         </ul>
                     </nav>
                     <div class="toggler">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars" id="toggler-btn"></i>
                     </div>
                 </div>
             </header>
@@ -93,6 +93,7 @@
                             quidem magnam.
                         </p>
 
+                        <!-- comment form -->
                         <div class="comment-form-container">
                             <h1 class="title">leave a comment</h1>
 
@@ -112,6 +113,21 @@
 
                                 <button type="submit" class="btn">post comment</button>
                             </form>
+                        </div>
+
+                        <!-- comments -->
+                        <div class="comments">
+                            <h2 class="title">all comments</h2>
+                            <div class="comment">
+                                <div class="user">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="user-details">
+                                    <h3 class="subtitle">Meqdad <span class="details">1 day earlier</span></h3>
+                                    <p class="body-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <!-- end single comment -->
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@
         position: absolute;
         inset: 0;
         z-index: 1;
-        animation: banner 15s ease infinite;
+        animation: banner 10s ease infinite;
     }
 
     &::before {
@@ -172,20 +172,20 @@
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 
 /* media */
 @media(max-width: 760px) {
-    #header {
+    .toggler {
+        display: block !important;
+        color: $gray-50;
+        position: relative;
+        z-index: 10;
+    }
 
-        .toggler {
-            display: block !important;
-            color: $gray-50;
-            position: relative;
-            z-index: 10;
-        }
+    #header {
 
         .header-nav {
             position: fixed;
@@ -217,7 +217,7 @@
             background-color: $blue-500;
             flex-direction: column !important;
             justify-content: stretch !important;
-            align-items: flex-end !important;
+            align-items: flex-start !important;
             padding: 2em;
             transition: all .3s ease-in-out;
 
@@ -638,7 +638,7 @@
     about us page
 ===================*/
 
-// about page
+// showcase page
 #page-showcase {
     height: 80vh;
 
@@ -650,15 +650,22 @@
 }
 
 
-// about section
+// about page
 #about {
     .about-content {
         @include grid($ai:stretch);
+        grid-column-gap: 4em;
 
         .title,
         .subtitle,
         .body-text {
             text-align: left;
+        }
+
+        .about-img {
+            img {
+                box-shadow: 10px 10px 0 $blue-500;
+            }
         }
     }
 }
@@ -741,6 +748,43 @@
         }
 
 
+        // comments section
+        .comments {
+            margin-top: 2.5em;
+
+
+            .comment {
+                padding: 2em;
+                border: 1px solid $gray-200;
+                display: grid;
+                grid-gap: 2em;
+                grid-template-columns: 4em 1fr;
+
+                &:not(:last-child) {
+                    margin-bottom: 1em;
+                }
+            }
+
+            .user {
+                background-color: $gray-300;
+                height: 4em;
+                width: 4em;
+                border-radius: 50px;
+                display: grid;
+                place-items: center;
+
+                .fas.fa-user {
+                    font-size: 2rem;
+                    color: $gray-50;
+                }
+            }
+
+            .subtitle .details {
+                padding-left: 1em;
+            }
+        }
+
+
         // category
         .category {
             background-color: $gray-100;
@@ -753,7 +797,7 @@
                 background-color: $blue-500;
                 border-radius: $border-radius;
                 margin-bottom: 1em;
-                padding: .5em 0;
+                padding: .5em;
                 text-align: center;
                 color: $gray-50;
                 text-transform: uppercase;
@@ -797,6 +841,10 @@
 
         .comment-form-container {
             padding: 1em !important;
+        }
+
+        .comment {
+            grid-template-columns: 1fr !important;
         }
     }
 }
