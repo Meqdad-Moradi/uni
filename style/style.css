@@ -132,7 +132,7 @@ section {
 
 #showcase::after,
 #page-showcase::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: url("../images/banner.jpg") no-repeat center/cover;
@@ -145,7 +145,7 @@ section {
 
 #showcase::before,
 #page-showcase::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background-color: #4B5563;
@@ -214,7 +214,7 @@ section {
 
 #showcase #header .logo .logo-text,
 #page-showcase #header .logo .logo-text {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -249,14 +249,14 @@ section {
 #showcase #header .header-nav .nav-list a,
 #page-showcase #header .header-nav .nav-list a {
   color: #F9FAFB;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
 }
 
 #showcase #header .header-nav .nav-list a::after,
 #page-showcase #header .header-nav .nav-list a::after {
-  content: '';
+  content: "";
   height: 3px;
   width: 0;
   background-color: #3B82F6;
@@ -265,8 +265,8 @@ section {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #showcase #header .header-nav .nav-list a:hover,
@@ -358,11 +358,11 @@ section {
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5;
+    z-index: 5000;
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #header .header-nav.active {
     opacity: 1;
@@ -387,8 +387,8 @@ section {
         -ms-flex-align: start !important;
             align-items: flex-start !important;
     padding: 2em;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #header .nav-list li {
     margin-left: 0 !important;
@@ -416,8 +416,8 @@ section {
   border: 1px solid #E5E7EB;
   padding: 2em;
   border-radius: 10px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #services .services-content .cart:hover {
@@ -473,9 +473,8 @@ section {
   place-items: center;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #global-campus .global-campus-content .cart:hover .title {
@@ -512,8 +511,8 @@ section {
   border-radius: 10px;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #facility .facility-content .cart-img img:hover {
@@ -537,7 +536,7 @@ section {
 }
 
 #cta::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background-color: #374151;
@@ -575,14 +574,14 @@ section {
 }
 
 #testimonials .container::after {
-  content: '';
+  content: "";
   background: url("../images/bg-pattern-quotation.svg") no-repeat center;
   background-size: 50%;
   position: absolute;
   top: 0;
   left: 0;
   width: 30%;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 #testimonials .testimonials-content {
@@ -599,8 +598,8 @@ section {
           align-items: center;
   margin-top: 2.5em;
   position: relative;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #testimonials .testimonials-content .testimonial {
@@ -613,12 +612,12 @@ section {
   grid-gap: 1em;
   -ms-grid-columns: 4em 1fr;
       grid-template-columns: 4em 1fr;
-      grid-template-areas: 'avatar name' 'content content';
+      grid-template-areas: "avatar name" "content content";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #testimonials .testimonials-content .testimonial:hover {
@@ -678,7 +677,7 @@ section {
 }
 
 #testimonials .testimonials-content .rating li {
-  font-size: .54rem;
+  font-size: 0.54rem;
   color: #3B82F6;
 }
 
@@ -751,7 +750,7 @@ section {
 }
 
 #footer .footer-content .logo .logo-text {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -788,13 +787,13 @@ section {
 
 #footer .footer-content .footer-nav .nav-list a {
   color: #F9FAFB;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
 }
 
 #footer .footer-content .footer-nav .nav-list a::after {
-  content: '';
+  content: "";
   height: 3px;
   width: 0;
   background-color: #3B82F6;
@@ -803,8 +802,8 @@ section {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #footer .footer-content .footer-nav .nav-list a:hover {
@@ -850,8 +849,8 @@ section {
 
 #footer .footer-content .social-links a {
   color: #9CA3AF;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #footer .footer-content .social-links a:hover {
@@ -862,7 +861,7 @@ section {
   background-color: #374151;
   text-align: center;
   color: #E5E7EB;
-  padding: .5em 0;
+  padding: 0.5em 0;
   margin: 0 !important;
   font-weight: 300;
   font-size: 14px;
@@ -942,8 +941,8 @@ section {
 }
 
 #about .about-content .about-img img {
-  -webkit-box-shadow: 10px 10px 0 #3B82F6;
-          box-shadow: 10px 10px 0 #3B82F6;
+  -webkit-box-shadow: 10px 10px 0 #93C5FD;
+          box-shadow: 10px 10px 0 #93C5FD;
 }
 
 #blogs .blog-content {
@@ -952,7 +951,7 @@ section {
   grid-gap: 3.5em;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: 'blog aside';
+      grid-template-areas: "blog aside";
   margin-top: 2.5em;
 }
 
@@ -1026,7 +1025,7 @@ section {
 #blogs .blog-content .input-container label {
   text-transform: capitalize;
   display: inline-block;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 #blogs .blog-content .input-container input,
@@ -1034,13 +1033,13 @@ section {
   width: 100%;
   resize: none;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-  padding: .5em .8em;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.8em;
   border: 1px solid #E5E7EB;
   border-radius: 5px;
   outline: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #blogs .blog-content .input-container input:hover, #blogs .blog-content .input-container input:focus,
@@ -1113,14 +1112,15 @@ section {
 
 #blogs .blog-content .category .subtitle {
   background-color: #3B82F6;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 1em;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
   color: #F9FAFB;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 #blogs .blog-content .category-list {
@@ -1143,11 +1143,11 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   cursor: pointer;
   color: #6B7280;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #blogs .blog-content .category-list li:last-child {
@@ -1163,7 +1163,7 @@ section {
   #blogs .blog-content {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
-        grid-template-areas: 'aside' 'blog';
+        grid-template-areas: "aside" "blog";
   }
   #blogs .comment-form-container {
     padding: 1em !important;
@@ -1215,7 +1215,7 @@ section {
 
 #contact .contact-content .contact-info-list li i {
   color: #3B82F6;
-  padding-right: .5em;
+  padding-right: 0.5em;
   font-size: 1.25rem;
 }
 
@@ -1242,6 +1242,25 @@ section {
           align-items: flex-start;
 }
 
+#contact .contact-content .contact-form-container .input-container.error input,
+#contact .contact-content .contact-form-container .input-container.error #message {
+  border-color: #ff4e4e;
+}
+
+#contact .contact-content .contact-form-container .input-container.error small {
+  display: block;
+  color: #ff4e4e;
+}
+
+#contact .contact-content .contact-form-container .input-container.success input,
+#contact .contact-content .contact-form-container .input-container.success #message {
+  border-color: #E5E7EB;
+}
+
+#contact .contact-content .contact-form-container .input-container.success small {
+  display: none;
+}
+
 #contact .contact-content .contact-form-container .input-container:not(:last-child) {
   margin-bottom: 1em;
 }
@@ -1249,7 +1268,7 @@ section {
 #contact .contact-content .contact-form-container .input-container label {
   text-transform: capitalize;
   display: inline-block;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 #contact .contact-content .contact-form-container .input-container input,
@@ -1257,13 +1276,13 @@ section {
   width: 100%;
   resize: none;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-  padding: .5em .8em;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.8em;
   border: 1px solid #E5E7EB;
   border-radius: 5px;
   outline: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #contact .contact-content .contact-form-container .input-container input:hover, #contact .contact-content .contact-form-container .input-container input:focus,
